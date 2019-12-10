@@ -13,5 +13,5 @@ func main() {
 	}
 	a[0] = k
 	fmt.Println(a)
-
+	//pusg
 }
