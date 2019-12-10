@@ -16,7 +16,7 @@ func deleteNumber(x int) ([]int, int) {
 	return a, k
 }
 func main() {
-
+	//main
 	var x int
 	fmt.Print("vvdedite chislo ")
 	fmt.Fscan(os.Stdin, &x)
