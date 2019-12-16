@@ -5,6 +5,8 @@ import (
 	_ "os"
 )
 
+//12e задание?
+
 func main() {
 	//var k int
 	//fmt.Println("vvedite razmer slice")
