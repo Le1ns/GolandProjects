@@ -4,7 +4,6 @@ import (
 	_ "crypto/aes"
 	"fmt"
 	"math/rand"
-	"sort"
 	"time"
 )
 
@@ -23,17 +22,12 @@ func Onlyone(arr []int) map[int]int {
 	for _, i := range arr {
 		massiv[i]++
 	}
-	keys := []int{}
-	for key := range massiv {
-		keys = append(keys, key)
-	}
-	sort.Ints(keys)
 
-	for i := 0; i < len(massiv); i++ {
-		if keys[i] == 1 {
-			fmt.Println(massiv[keys[i]])
+	for k, i := range massiv {
+		if i == 1 {
+			fmt.Println(k, i)
 		}
-	} //ne dodelano
+	} //selano izi(net)
 	return massiv
 }
 
