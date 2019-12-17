@@ -4,9 +4,10 @@ import (
 	"fmt"
 )
 
+//все ок
 func main() {
 	newFib := memoize(fib)
-	for i := 1; i < 42; i++ {
+	for i := 1; i < 11; i++ {
 		fmt.Println(newFib(i))
 	}
 }

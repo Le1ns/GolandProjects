@@ -8,11 +8,8 @@ func main() {
 	a := []int{1, 2, 3, 4, 5, 6, 7, 8}
 	i := len(a) - 1
 	k := a[i]
-	// Remove the element at index i from a.
-	copy(a[i:], a[i+1:]) // Shift a[i+1:] left one index.
-	a[len(a)-1] = 0      // Erase last element (write zero value).
-	a = a[:len(a)-1]     // Truncate slice.
-
+	a = a[:len(a)-1]
+	//не очень понятно, зачем нужен был этот кусок
 	fmt.Println(a, k) // [A B D E]
 
 }

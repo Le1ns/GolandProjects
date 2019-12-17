@@ -5,7 +5,7 @@ import (
 	"strings"
 	"unicode"
 )
-
+/// Супер!
 func count(str string) map[string]int {
 
 	slovar := make(map[string]int)

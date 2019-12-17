@@ -14,8 +14,8 @@ func main() {
 		fmt.Println("i slishkom bolshaya")
 	}
 
-	c := append(a[i:], a[:i]...)
+	a = append(a[i:], a[:i]...)
 
-	fmt.Println(c)
+	fmt.Println(a)
 
 }

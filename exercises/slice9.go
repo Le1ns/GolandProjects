@@ -8,8 +8,13 @@ func main() {
 	for i := 0; i < len(a)-1; i++ {
 		temp := a[i+1]
 		a[i] = temp
+		//a[i]=[a+1] ? Зачем нужна временная переменная?
 	}
 	a[len(a)-1] = k
 	fmt.Println(a)
 
+	first := a[0]
+	copy(a, a[1:])
+	a[len(a)-1] = first
+	fmt.Println(a)
 }
