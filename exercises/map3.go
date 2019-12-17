@@ -18,16 +18,19 @@ import (
 }*/
 
 func Onlyone(arr1, arr2 []int) map[int]int {
+	// лучше было использовать map[int] struct
 	massiv1 := make(map[int]int)
 	massiv2 := make(map[int]int)
 	//res:=make(map[int]int)
 	for _, i := range arr1 {
 		massiv1[i]++
 	}
+	//тут можно было сразу проверять
+	// а ля if _,ok:=massiv1[i] ...
 	for _, i := range arr2 {
 		massiv2[i]++
 	}
-
+	//это кусок лишний
 	for k, i := range massiv1 {
 		for j, n := range massiv2 {
 			if k == j {
